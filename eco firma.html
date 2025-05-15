@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TURBO Karting – Cel mai tare circuit electric</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #1a1a1a;
+      color: #e0e0e0;
+    }
+    header {
+      background-color: #00cfd1;
+      color: black;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: #00cfd1;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .section h2 {
+      color: #00cfd1;
+      margin-bottom: 10px;
+    }
+    .facilitati {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      background-color: #2b2b2b;
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1 1 250px;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .preturi ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .preturi li {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+    }
+    .contact input, .contact textarea {
+      margin-bottom: 15px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+    .contact button {
+      background-color: #00cfd1;
+      color: black;
+      padding: 10px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TURBO Karting</h1>
+    <p>Cel mai mare circuit de karting electric din Europa – În București</p>
+  </header>
+
+  <nav>
+    <a href="#facilitati">Facilități</a>
+    <a href="#preturi">Tarife</a>
+    <a href="#program">Program</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="facilitati" class="section">
+    <h2>Facilități</h2>
+    <div class="facilitati">
+      <div class="card">
+        <img src="https://fras.ro/ro/wp-content/uploads/karting-electric-840x560.jpg" alt="Kart electric modern">
+        <h3>Karturi electrice de ultimă generație</h3>
+        <p>Viteză, siguranță și zero emisii. Avem 30 de karturi performante, ideale pentru toate vârstele.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Food Court modern">
+        <h3>Food Court & Lounge</h3>
+        <p>Relaxare după cursă cu mâncare, băuturi și zone de socializare moderne.</p>
+      </div>
+      <div class="card">
+        <img src="data:image/jpeg;base64,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" alt="Evenimente de echipă">
+        <h3>Evenimente & Team Building</h3>
+        <p>Organizăm zile de naștere, competiții, evenimente private și corporate.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="preturi" class="section preturi">
+    <h2>Tarife</h2>
+    <ul>
+      <li>Cursă individuală (15 minute) – 130 RON</li>
+      <li>Abonament 5 curse – 600 RON</li>
+      <li>Abonament nelimitat lunar – 1999 RON</li>
+      <li>Team Building / Grupuri – preț personalizat</li>
+    </ul>
+  </section>
+
+  <section id="program" class="section">
+    <h2>Program</h2>
+    <p>Suntem deschiși zilnic între orele <strong>08:00 - 21:00</strong>.</p>
+    <p>Nu este necesară rezervare pentru curse individuale. Pentru evenimente, vă rugăm să ne contactați.</p>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Nume complet" required>
+      <input type="email" placeholder="Adresă de email" required>
+      <textarea placeholder="Mesajul tău..." rows="5" required></textarea>
+      <button type="submit">Trimite</button>
+    </form>
+  </section>
+
+  <div class="footer">
+    &copy; 2025 TURBO Karting. Toate drepturile rezervate.
+  </div>
+</body>
+</html>
